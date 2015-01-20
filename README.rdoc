@@ -1,0 +1,14 @@
+{
+  "configure": {
+    "monit": {
+       "mailserver_host" : "smtp.yourserver.com",
+       "mailserver_port" : "25",
+       "mailserver_username" : "mailusername",
+       "mailserver_password" : "mailpassword",
+       "mailformat_from_email": "alerter@mydomain.com",
+       "alert_email": "alerts@mydomain.com",
+       "user_web_username": "admin",
+       "user_web_password": "pwd"
+    }
+  }
+}

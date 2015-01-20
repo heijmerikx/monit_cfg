@@ -16,6 +16,11 @@ template node[:monit][:conf] do
   mode 0600
 end
 
+template File.join(node[:monit][:conf_dir], "redis.monitrc") do
+  source "redis.monitrc.erb"
+  mode 0644
+end
+
 if platform?('centos','redhat','fedora','amazon')
   file File.join(node[:monit][:conf_dir], 'logging') do
     action :delete

@@ -1,4 +1,4 @@
-include_recipe "monit_config::service"
+include_recipe "monit_cfg::service"
 
 if platform?('debian','ubuntu')
   template "/etc/default/monit" do

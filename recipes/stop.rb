@@ -1,4 +1,4 @@
-include_recipe "monit_config::service"
+include_recipe "monit_cfg::service"
 
 service "monit" do
   action :stop

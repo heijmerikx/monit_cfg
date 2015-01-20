@@ -1,4 +1,4 @@
-include_attribute 'monit_config::default'
+include_attribute 'monit_cfg::default'
 
 case node[:platform]
 when 'centos','redhat','fedora','suse','amazon'

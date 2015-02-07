@@ -8,5 +8,6 @@ set eventqueue
 set logfile syslog
 Include <%= node[:monit][:conf_dir] %>/*.monitrc
 set httpd port 2812 and use the address localhost
+  allow 127.0.0.1
   allow <%=node[:opsworks][:instance][:ip]%>
   allow <%= node[:configure][:monit][:user_web_username] %>:<%= node[:configure][:monit][:user_web_password] %>
